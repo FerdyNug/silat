@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#"
+     xml:base="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:silat="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#didirikan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#didirikan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#mendirikan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#mendirikan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#mendirikan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:ObjectProperty>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#memiliki -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#memiliki">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+		<owl:inverseOf rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#dimiliki"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+    </owl:ObjectProperty>
+	
+	
+
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#dimiliki -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#dimiliki">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:ObjectProperty>
+
+
+
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#mendidik -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#mendidik">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+		<owl:inverseOf rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#asal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+    </owl:ObjectProperty>
+
+
+
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#asal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#asal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaPerguruan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaPerguruan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaTempat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaTempat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:DatatypeProperty>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaTahun -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaTahun">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaPendiri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaPendiri">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+    </owl:DatatypeProperty>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaGuru -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaGuru">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+    </owl:DatatypeProperty>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaJurus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#namaJurus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+     <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri">
+       <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+	
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri1"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru1"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus1"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laskar Adat Betawi</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DKI Jakarta</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021</namaTahun>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri2"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru2"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus2"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IKSPI Kera Sakti</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madiun</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1980</namaTahun>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri3"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru3"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus3"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merpati Putih</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yogyakarta</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1963</namaTahun>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri4"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru4"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus4"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perisai Diri</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surabaya</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1955</namaTahun>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri5"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru5"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus5"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persatuan Hati</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yogyakarta</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1927</namaTahun>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri6"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru6"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus6"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tapak Suci</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banjarnegara</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1963</namaTahun>
+    </owl:NamedIndividual>
+	
+	
+	
+	    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri7"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru7"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus7"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beksi</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tangerang</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-</namaTahun>
+    </owl:NamedIndividual>
+	
+	
+	
+	    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri8"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru8"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus8"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cimande</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cimande</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1760</namaTahun>
+    </owl:NamedIndividual>
+	
+	
+	
+	    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri9"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru9"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus9"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSHT</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madiun</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1922</namaTahun>
+    </owl:NamedIndividual>
+	
+	
+	
+	    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Perguruan"/>
+        <didirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri10"/>
+		<mendidik rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru10"/>
+		<memiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus10"/>
+        <namaPerguruan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pagar Nusa</namaPerguruan>
+        <namaTempat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kediri</namaTempat>
+		<namaTahun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1986</namaTahun>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan1"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H. Damin Sada</namaPendiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan2"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R. Totong Kiemdarto</namaPendiri>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan3"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purwoto Hadi Purnomo</namaPendiri>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan4"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R.M. Soebandiman Djirdjotmodjo</namaPendiri>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan5"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R.M. Mangku Pujono</namaPendiri>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan6"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Djarnawi Hadikusumo</namaPendiri>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan7"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lie Ceng Oek</namaPendiri>
+    </owl:NamedIndividual>
+	
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan8"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mbah Khair</namaPendiri>
+    </owl:NamedIndividual>
+	
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan9"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ki Hajar Harto Utomo</namaPendiri>
+    </owl:NamedIndividual>
+	
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#pendiri10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Pendiri"/>
+        <mendirikan rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan10"/>
+        <namaPendiri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KH. Abdullah Ma'sun Jauhari</namaPendiri>
+    </owl:NamedIndividual>
+
+
+
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan1"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H. Damin Sada, Achmad Barif Sutanto, Andry Bactiar, H. Jamal, H. Lutfi Marjuki, H. M. Yasin, Icing Faisal, Ifan, Moelyadi, Monadi, Muhammad Subur, Wahyudin Aditya</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan2"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drs Bambang Sunarja MA, R Totong Kiemdarto, Raden Koeswanto</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan3"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aam Amperiawan, Amos Priono Tri Nugroho, Budi Santoso Poernomo, Didik Budi Santosa, Koko Sujatmoko, Nehemia Budi Setyawan, Oetari K. Hartono, Poerwoto Hadi Poernomo, Sugeng Sapto Anggoro, Titiek Prabowo</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan4"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dwi Soetjipto, Edi Purwanto, R.M. Soebandiman Dirdjotmodjo</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan5"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ir. Sudarto, Mbah Djoyo, Pak Wignyo, Purwo Sumarto, R.M. Mangku Pujono, R.M. Nardi, R.M. Widji Hartani</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan6"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Djarnawi Hadikusumo, Drs. H. M. Afnan Hadikusumo</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan7"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H. Ghozali, H. Hasbullah, Ki Marhali, Lie Ceng Oek, Lie Gie Tong, Lie Tong San</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan8"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ki Jatnika Nanggamiharja, Mang Nana, Master Debus, Didih Supriadi, Kyoko Soda, Mbah Khair, Mohammad Rifai Sahib</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan9"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arif Suryono, Badini, H. Tardmaji Boedi Harsono, Ki Hajar Harto Utomo, Ki Ngabei Soerodiwirjo, M. Irsad, Moerdjoko HW, Muhammad Taufik, R.M. Imam Koesoepangat, Richard Simoangkir, Santoso Kartoarmodjo, Soetomo Mangkoedjojo</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#guru10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Guru"/>
+        <asal rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan10"/>
+        <namaGuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdullah Ma'sum Jauhari, Gus Nabil Haroen, KH Aizzudin Abdurrahman, KH Drs. Fuad Abdurrahman, KH Subharnillah</namaGuru>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan1"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan2"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chie Pen, Geijen, Gerakan Besi, Kera Tengil, Wha Jien</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan3"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rangkaian Gerak Bebas, Rangkaian Gerak Praktis, Rangkaian Gerak Terikat</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan4"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burung Kuntul, Garuda, Harimau, Kera, Meliwis, Naga, Pendeta, Solo_Spell</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan5"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gasangan, Grip, Kepruk, Pancer, Pasangan</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan6"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belitan Tangkai Bunga Mawar, Harimau Membuka Jalan, Harimau Menutup Jalan, Ikan Terbang Menggoyang Sirip, Ikan Terbang Menjulang Angkasa, Katak Melempar Tubuh, Naga Terbang, Rajawali Mengibas Sayap, Tandukan Lembu Jantan, Tangkisan Bunga Mawar Layu, Tangkisan Bunga Mawar Mekar, Terkaman Harimau Lapar</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan7"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baduk Kebo, Bandut Atas Bandut Bawah, Bangau Terbang, Cabut Pisau, Dedak Kuda Ke Tanah, Ganden, Gedig, Goleng, Jejek Kaki, Kepret, Kibas Luar, Loco Buni, Pedang Serangkai, Pedang Tangan Kosong, Raub Saub, Sikut Belakang Sikut Depan, Singkur Kiri Singkur Kanan, Susul, Tangkep Dalam Tangkep Luar, Tangkis, Tekuk Saub, Tiles, Totok, Toya</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan8"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajulan, Bolang Baling, Buang Kelid Dibeulah, Kelid Timpah Pamonyet, Kelid Timpah Potongan, Kelid, Koreh Pamonyet, Pakalah, Pamacan, Pamonyet, Pangerodan, Pepedangan, Sambeuran, Selup, Serong Gigir, Tangkeupan, Teke, Tewak Jero, Tewak Teke, Tewakan, Timpah Dua, Timpah Sabeulah, Timpah Tilu, Tungkup Selup, Turugung</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan9"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-</namaJurus>
+    </owl:NamedIndividual>
+	
+	
+	
+	<!-- http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#jurus10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#Jurus"/>
+        <dimiliki rdf:resource="http://www.semanticweb.org/ferdynugraha/ontologies/2024/05/silat#perguruan10"/>
+        <namaJurus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-</namaJurus>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
